@@ -1,0 +1,12 @@
+version: '3'
+services:
+  node:
+    build:
+      context: .
+    command: bash -c "yarn install && yarn run parcel src/index.html"
+    volumes:
+      - '.:/myapp'
+    ports:
+      - '4001:1234'
+    tty: true
+    stdin_open: true
