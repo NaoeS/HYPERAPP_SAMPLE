@@ -1,25 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <script type="module">
-    import { h, app } from "https://unpkg.com/hyperapp"
-
-    app({
-      init: 0,
-      view: state =>
-        h("main", {}, [
-          h("h1", {}, state),
-          h("button", { onClick: state => state - 1 }, "-"),
-          h("button", { onClick: state => state + 1 }, "+")
-        ]),
-      node: document.getElementById("app")
-    })
-  </script>
+  <title>Hello, Hyperapp</title>
 </head>
 
 <body>
   <main id="app"></main>
+  <script src="index.js"></script>
 </body>
 
 </html>
